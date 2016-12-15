@@ -1,10 +1,11 @@
 import turtle
 
-def draw_square(format = "classic"):
+def draw_square(format = "classic", color = "black"):
     window = turtle.Screen()
     window.bgcolor("red")
     i = 0
     brad = turtle.Turtle()
+    brad.color(color)
     if format not in ["arrow", "turtle", "circle", "square", "triangle", "classic"]:
         brad.shape("classic")
     else:
@@ -16,5 +17,5 @@ def draw_square(format = "classic"):
         i+=1
     window.exitonclick()
 
-draw_square("turtle")
+draw_square("turtle", "blue")
     
